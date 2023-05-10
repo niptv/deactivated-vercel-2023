@@ -31,9 +31,9 @@ export default function Home() {
 
   useEffect(() => {
     if (theUser !== null) {
-      if (theUser.acStatus !== "DEACTIVATED") {
+      if (theUser.acStatus !== "null") {
         var myHeaders = new Headers();
-        myHeaders.append("Authorization", "Bearer 53d037668d748648c12097863c2321ea61be9de0");
+        myHeaders.append("Authorization", "Bearer 74799c1a3ace07d9d568b092c8526cadcf55457a");
         myHeaders.append("Content-Type", "application/json");
         console.log('mko');
         console.log(process.env.REACT_APP_M3U_FUNCTION_BASE_URL);
@@ -210,7 +210,7 @@ export default function Home() {
                   <Segment loading={loading}>
                     <Header as="h1">Welcome, {theUser.sName}</Header>
                     {
-                      theUser !== null && theUser.acStatus !== "DEACTIVATED" ?
+                      theUser !== null && theUser.acStatus !== "null" ?
                         <Message>
                           <Message.Header>Dynamic URL to get m3u: </Message.Header>
                           {/* <Image centered src={'https://api.qrserver.com/v1/create-qr-code/?size=400x400&data=' + encodeURIComponent(m3uMeta.url)} size='small' /> */}
