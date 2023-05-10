@@ -18,4 +18,4 @@ Once you generate the m3u URL, you don't need to do it every 24 hours. It will a
 ## Inspiration
 https://github.com/niptv/deactivated-vercel-2023
 
-### It works with deactivated accounts too. Enjoy.. :smiley:
+### It works with deactivated accounts. Enjoy.. :smiley:
